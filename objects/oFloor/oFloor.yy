@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sFloor",
-    "path": "sprites/sFloor/sFloor.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
