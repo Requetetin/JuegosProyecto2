@@ -1,4 +1,4 @@
 ///Initialize variables
-spd = 4;
+spd = 3;
 xSpd = 0;
 ySpd = 0;

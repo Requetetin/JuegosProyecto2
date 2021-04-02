@@ -11,7 +11,7 @@ ySpd++;
 
 if (isGrounded) {
 	if (jump) {
-		ySpd = -15;
+		ySpd = -11;
 	}
 }
 
