@@ -9,10 +9,15 @@ if (xMvmnt != 0) image_xscale = xMvmnt;
 xSpd = xMvmnt * spd;
 ySpd++;
 
+
 if (isGrounded) {
+	if (xMvmnt != 0) { sprite_index = sPlayerRun; }
+	else { sprite_index = sPlayerIdle; }
 	if (jump) {
 		ySpd = -11;
 	}
+}else {
+ //sprite_index = sPlayerJump;	
 }
 
 if (place_meeting(x + xSpd, y, oFloor)) {
