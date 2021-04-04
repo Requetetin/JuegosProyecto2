@@ -2,10 +2,13 @@
   "resources": [
     {"id":{"name":"tJungle","path":"tilesets/tJungle/tJungle.yy",},"order":0,},
     {"id":{"name":"sFloor","path":"sprites/sFloor/sFloor.yy",},"order":2,},
+    {"id":{"name":"Timer","path":"objects/Timer/Timer.yy",},"order":2,},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":5,},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},"order":4,},
+    {"id":{"name":"oPlayerTwo","path":"objects/oPlayerTwo/oPlayerTwo.yy",},"order":3,},
     {"id":{"name":"sJungleTiles","path":"sprites/sJungleTiles/sJungleTiles.yy",},"order":3,},
     {"id":{"name":"oPlayerOne","path":"objects/oPlayerOne/oPlayerOne.yy",},"order":0,},
+    {"id":{"name":"Sprite5","path":"sprites/Sprite5/Sprite5.yy",},"order":15,},
     {"id":{"name":"oFloor","path":"objects/oFloor/oFloor.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
