@@ -1,15 +1,17 @@
 /// playerMvmt
-var active = keyboard_check(ord("T"));
-if (active){
+
+
+if (global.active){
 var xMvmnt = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var jump = keyboard_check_pressed(vk_space);
 var isGrounded = place_meeting(x, y+1, oFloor);
-var rope = keyboard_check(ord("E"));
+var rope = keyboard_check(ord("Q"));
 if (xMvmnt != 0) image_xscale = xMvmnt;
 
 xSpd = xMvmnt * spd;
 ySpd++;
 
+	
 
 
 	if (isGrounded) {
@@ -41,7 +43,6 @@ ySpd++;
 	
 	}
 	
-	if(keyboard_check(ord("T"))) active = !active;
 	
 	
 	y += ySpd;
