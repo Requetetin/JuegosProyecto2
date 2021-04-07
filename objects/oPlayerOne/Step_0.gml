@@ -5,6 +5,7 @@ if (global.active){
 var xMvmnt = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var jump = keyboard_check_pressed(vk_space);
 var isGrounded = place_meeting(x, y+1, oFloor);
+var onPlayer = place_meeting(x, y+1, oPlayerTwo);
 var rope = keyboard_check(ord("Q"));
 if (xMvmnt != 0) image_xscale = xMvmnt;
 
@@ -14,7 +15,7 @@ ySpd++;
 	
 
 
-	if (isGrounded) {
+	if (isGrounded || onPlayer) {
 		if (xMvmnt != 0) { sprite_index = sPlayerRun; }
 		else { sprite_index = sPlayerIdle; }
 		if (jump) {
@@ -38,11 +39,10 @@ ySpd++;
 
 	x += xSpd;
 
-	if (place_meeting(x, y + ySpd, oFloor)) {
+	if (place_meeting(x, y + ySpd, oFloor) || place_meeting(x, y + ySpd, oPlayerTwo)) {
 		ySpd = 0;
 	
 	}
-	
 	
 	
 	y += ySpd;
