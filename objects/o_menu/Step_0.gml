@@ -2,7 +2,7 @@ var up, down, accept;
 
 up			= keyboard_check_pressed(vk_up);
 down		= keyboard_check_pressed(vk_down);
-accept		= keyboard_check_pressed(ord("F"));
+accept		= keyboard_check_pressed(vk_enter);
 
 
 if up and image_index > 0 {
