@@ -1,0 +1,1 @@
+timeToDeath = 0;
