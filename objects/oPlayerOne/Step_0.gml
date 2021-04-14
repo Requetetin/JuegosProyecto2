@@ -1,7 +1,7 @@
 /// playerMvmt
 
 
-if (global.active){
+if (!global.active){
 var xMvmnt = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var jump = keyboard_check_pressed(vk_space);
 var isGrounded = place_meeting(x, y+1, oFloor);
