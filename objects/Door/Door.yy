@@ -1,14 +1,11 @@
 {
   "spriteId": {
-    "name": "sPlayerIdle",
-    "path": "sprites/sPlayerIdle/sPlayerIdle.yy",
+    "name": "Sprite13",
+    "path": "sprites/Sprite13/Sprite13.yy",
   },
   "solid": true,
   "visible": true,
-  "spriteMaskId": {
-    "name": "sPlayerIdle",
-    "path": "sprites/sPlayerIdle/sPlayerIdle.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -22,15 +19,10 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":24.0,"y":0.0,},
-    {"x":24.0,"y":24.0,},
-    {"x":0.0,"y":24.0,},
-  ],
+  "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayerOne","path":"objects/oPlayerOne/oPlayerOne.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -39,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oPlayerTwo",
+  "name": "Door",
   "tags": [],
   "resourceType": "GMObject",
 }

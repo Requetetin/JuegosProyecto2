@@ -15,7 +15,7 @@ if down and image_index < image_number-1 {
 
 
 if image_index == 0 and accept {
-	room_goto(Game);
+	room_goto(Tutorial1);
 }
 
 if image_index == 2 and accept {

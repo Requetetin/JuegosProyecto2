@@ -6,7 +6,7 @@ var xMvmnt = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var jump = keyboard_check_pressed(vk_space);
 var isGrounded = place_meeting(x, y+1, oFloor);
 var onPlayer = place_meeting(x, y+1, oPlayerOne);
-var jetpack = keyboard_check(ord("Q"));
+var jetpack = keyboard_check(ord("C"));
 if (xMvmnt != 0) image_xscale = xMvmnt;
 
 xSpd = xMvmnt * spd;

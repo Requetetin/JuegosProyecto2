@@ -1,5 +1,4 @@
 {
-  "name": "tJungle",
   "spriteId": {
     "name": "sJungleTiles",
     "path": "sprites/sJungleTiles/sJungleTiles.yy",
@@ -136,6 +135,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "tJungle",
   "tags": [],
   "resourceType": "GMTileSet",
 }
