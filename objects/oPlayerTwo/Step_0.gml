@@ -1,18 +1,24 @@
 /// playerMvmt
 
-
-if (global.active){
+if(!global.active){
+		sprite_index = sTransparentTwo;
+}
+if (global.active){	
 var xMvmnt = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+var coyoteTime = 8;
 var jump = keyboard_check_pressed(vk_space);
 var isGrounded = place_meeting(x, y+1, oFloor);
 var onPlayer = place_meeting(x, y+1, oPlayerOne);
 var jetpack = keyboard_check(ord("C"));
 if (xMvmnt != 0) image_xscale = xMvmnt;
+var checkDoor = place_meeting(x + xSpd, y, Door);
 
 xSpd = xMvmnt * spd;
 ySpd++;
 	
-	
+	 if(checkDoor){
+		room_goto(targetRoom); 
+ }
 	
 	if (jetpack && (!isGrounded || !onPlayer)){
 		// esto simula el tiempo
@@ -29,14 +35,18 @@ ySpd++;
 	}
 
 	if (isGrounded || onPlayer) {
+		coyoteTime = 8;
 		if (xMvmnt != 0) { sprite_index = sSecondRun; }
 		else { sprite_index = sSecondIdle; }
-		if (jump) {
-			ySpd = -11;
+		if (coyoteTime > 0){
+			if (jump) {
+				ySpd = -11;
+			}
 		}
 	
 	
 	}else {
+		coyoteTime -= 1;
 	 //sprite_index = sSecondJump;	
 	}
 
