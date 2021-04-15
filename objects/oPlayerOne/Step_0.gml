@@ -10,7 +10,7 @@ var xMvmnt = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var jump = keyboard_check_pressed(vk_space);
 var isGrounded = place_meeting(x, y+1, oFloor);
 var onPlayer = place_meeting(x, y+1, oPlayerTwo);
-var rope = keyboard_check(ord("C"));
+var rope = keyboard_check(vk_shift);
 if (xMvmnt != 0) image_xscale = xMvmnt;
 var checkDoor = place_meeting(x + xSpd, y, Door);
 

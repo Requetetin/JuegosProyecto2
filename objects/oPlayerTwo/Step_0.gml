@@ -9,7 +9,7 @@ var coyoteTime = 8;
 var jump = keyboard_check_pressed(vk_space);
 var isGrounded = place_meeting(x, y+1, oFloor);
 var onPlayer = place_meeting(x, y+1, oPlayerOne);
-var jetpack = keyboard_check(ord("C"));
+var jetpack = keyboard_check(vk_shift);
 if (xMvmnt != 0) image_xscale = xMvmnt;
 var checkDoor = place_meeting(x + xSpd, y, Door);
 

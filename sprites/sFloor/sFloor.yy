@@ -65,9 +65,8 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":6.0,"displayName":"default","resourceVersion":"1.0","name":"043cd320-0517-4837-ac86-270e553e6d6e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":5.0,"displayName":"default","resourceVersion":"1.0","name":"043cd320-0517-4837-ac86-270e553e6d6e","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
