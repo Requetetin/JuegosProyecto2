@@ -18,6 +18,10 @@ if image_index == 0 and accept {
 	room_goto(Tutorial1);
 }
 
+if image_index == 1 and accept {
+	room_goto(OptionMenu);
+}
+
 if image_index == 2 and accept {
 	game_end();
 }
